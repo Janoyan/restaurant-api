@@ -1,0 +1,6 @@
+[
+{ "_id" : { "$oid" : "5eeb979081579b103ebcf40d" }, "title" : "Restaurant-1", "description" : "Description of restaurant 1", "photo" : "https://raw.githubusercontent.com/Janoyan/test/master/restaurants/1.jpg", "rating" : 0.0 },
+{ "_id" : { "$oid" : "5eeb979781579b103ebcf411" }, "title" : "Restaurant-2", "description" : "Description of restaurant 2", "photo" : "https://raw.githubusercontent.com/Janoyan/test/master/restaurants/2.jpg", "rating" : 0.0 },
+{ "_id" : { "$oid" : "5eeb97ab81579b103ebcf418" }, "title" : "Restaurant-3", "description" : "Description of restaurant 3", "photo" : "https://raw.githubusercontent.com/Janoyan/test/master/restaurants/3.jpg", "rating" : 0.0 },
+{ "_id" : { "$oid" : "5eeb97ab81579b103ebcf419" }, "title" : "Restaurant-4", "description" : "Description of restaurant 4", "photo" : "https://raw.githubusercontent.com/Janoyan/test/master/restaurants/4.jpg", "rating" : 0.0 }
+]

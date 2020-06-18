@@ -1,0 +1,9 @@
+{
+  "apps":[
+    {
+      "name": "data-controller",
+      "script": "./server.js",
+      "watch": true
+    }
+  ]
+}

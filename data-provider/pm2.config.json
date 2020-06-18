@@ -1,0 +1,9 @@
+{
+  "apps":[
+    {
+      "name": "data-provider",
+      "script": "./server.js",
+      "watch": true
+    }
+  ]
+}

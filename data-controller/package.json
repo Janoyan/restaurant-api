@@ -1,0 +1,37 @@
+{
+    "name": "data-controller",
+    "version": "0.1.0",
+    "description": "Data controller",
+    "author": "Meruzh Janoyan",
+    "license": "MIT",
+    "repository": {},
+    "scripts": {
+        "start": "node dist/server.js",
+        "build": "tsc && npm run copy-configs",
+        "watch-ts": "tsc -w",
+        "copy-configs": "ts-node copy-configs.ts",
+        "watch-node": "nodemon dist/server.js",
+        "watch": "npm run build && concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\"  \"npm run watch-ts\" \"npm run watch-node\""
+    },
+    "dependencies": {
+        "bluebird": "^3.7.2",
+        "config": "^3.3.1",
+        "dotenv": "^8.2.0",
+        "kafka-node": "^5.0.0",
+        "mongoose": "^5.9.19"
+    },
+    "devDependencies": {
+        "@types/bluebird": "^3.5.32",
+        "@types/config": "0.0.36",
+        "@types/dotenv": "^8.2.0",
+        "@types/kafka-node": "^3.0.0",
+        "@types/mongoose": "^5.7.27",
+        "@types/node": "^14.0.13",
+        "@types/shelljs": "^0.8.8",
+        "concurrently": "^5.2.0",
+        "nodemon": "^1.19.2",
+        "shelljs": "^0.8.4",
+        "ts-node": "^8.4.1",
+        "typescript": "^3.6.3"
+    }
+}

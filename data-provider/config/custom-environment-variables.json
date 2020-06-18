@@ -1,0 +1,7 @@
+{
+  "env": "ENV",
+  "db": {
+    "uri": "MONGO_URI"
+  },
+  "kafkaHost": "KAFKA_HOST"
+}

@@ -1,0 +1,15 @@
+db = db.getSiblingDB('restaurant-api-db');
+
+try {
+    db.createUser({
+      user: "api",
+      pwd: "{{db-pswd}}",
+      roles: [ "readWrite" ]
+    });
+
+} catch(err) {
+    print(err.message);
+}
+
+
+db.createCollection('users');
