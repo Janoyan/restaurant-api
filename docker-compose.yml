@@ -44,6 +44,8 @@ services:
   restaurant-api:
     container_name: restaurant-api
     build: ./restaurant-api
+    ports:
+      - "3000:3000"
     depends_on:
       - restaurant-api-db
     env_file:
@@ -51,6 +53,8 @@ services:
   auth-api:
     container_name: auth-api
     build: ./auth-api
+    ports:
+      - "3001:3001"
     depends_on:
       - auth-api-db
     env_file:
