@@ -1,6 +1,8 @@
 FROM keymetrics/pm2:12-alpine
 MAINTAINER jan
 
+RUN apk add --no-cache python build-base
+
 ADD . /tmp/data-controller/
 
 RUN cd /tmp/data-controller && npm install && npm run build

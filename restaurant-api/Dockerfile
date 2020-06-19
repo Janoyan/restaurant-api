@@ -1,6 +1,8 @@
 FROM keymetrics/pm2:12-alpine
 MAINTAINER jan
 
+RUN apk add --no-cache python build-base
+
 ADD . /tmp/restaurant-api/
 
 RUN cd /tmp/restaurant-api && npm install && npm run build
