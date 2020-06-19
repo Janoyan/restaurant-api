@@ -1,0 +1,10 @@
+{
+  "port": "PORT",
+  "env": "ENV",
+  "db": {
+    "uri": "MONGO_URI"
+  },
+  "token": {
+    "secret": "JWT_SECRET"
+  }
+}
