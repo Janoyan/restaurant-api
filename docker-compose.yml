@@ -5,8 +5,6 @@ services:
     build: ./auth-api-db
     ports:
       - "27017:27017"
-    volumes:
-      - /data/mongodb/auth-api-db:/data/db
     env_file:
       - ./auth-api-db/.env
   restaurant-api-db:
@@ -14,8 +12,6 @@ services:
     build: ./restaurant-api-db
     ports:
       - "27018:27017"
-    volumes:
-      - /data/mongodb/restaurant-api-db:/data/db
     env_file:
       - ./restaurant-api-db/.env
   data-controller-db:
@@ -23,8 +19,6 @@ services:
     build: ./data-controller-db
     ports:
       - "27019:27017"
-    volumes:
-      - /data/mongodb/data-controller-db:/data/db
     env_file:
       - ./data-controller-db/.env
   r-zookeeper:
